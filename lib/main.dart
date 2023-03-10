@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/screens/app_bar.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'BBANTO',
-      home: Grade(),
+      home: MyAppBar(),
     );
   }
 }
@@ -35,8 +36,7 @@ class Grade extends StatelessWidget {
           children: [
             Center(
               child: CircleAvatar(
-                backgroundImage:
-                    AssetImage('assets/KakaoTalk_20201218_040759286.jpg'),
+                backgroundImage: AssetImage('assets/image1.jpg'),
                 radius: 60.0,
               ),
             ),
@@ -126,8 +126,7 @@ class Grade extends StatelessWidget {
             ),
             Center(
               child: CircleAvatar(
-                backgroundImage:
-                    AssetImage('assets/KakaoTalk_20201218_041525950.png'),
+                backgroundImage: AssetImage('assets/image2.png'),
                 radius: 40.0,
                 backgroundColor: Colors.amber,
               ),
