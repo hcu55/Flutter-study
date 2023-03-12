@@ -28,11 +28,13 @@ class MyPage extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {
+                // ignore: avoid_print
                 print("Shopping cart button is clicked");
               },
               icon: const Icon(Icons.shopping_cart)),
           IconButton(
               onPressed: () {
+                // ignore: avoid_print
                 print("Search button is clicked");
               },
               icon: const Icon(Icons.search)),
@@ -56,9 +58,10 @@ class MyPage extends StatelessWidget {
                 //   backgroundColor: Colors.white,
                 // )
               ],
-              accountName: Text("BBANTO"),
-              accountEmail: Text("bbanto@naver.com"),
+              accountName: const Text("BBANTO"),
+              accountEmail: const Text("bbanto@naver.com"),
               onDetailsPressed: () {
+                // ignore: avoid_print
                 print("arrow is clicked");
               },
               decoration: BoxDecoration(
@@ -72,33 +75,36 @@ class MyPage extends StatelessWidget {
                 Icons.home,
                 color: Colors.grey[850],
               ),
-              title: Text("Home"),
+              title: const Text("Home"),
               onTap: () {
+                // ignore: avoid_print
                 print("Home is clicked");
               },
-              trailing: Icon(Icons.add),
+              trailing: const Icon(Icons.add),
             ),
             ListTile(
               leading: Icon(
                 Icons.settings,
                 color: Colors.grey[850],
               ),
-              title: Text("settings"),
+              title: const Text("settings"),
               onTap: () {
+                // ignore: avoid_print
                 print("settings is clicked");
               },
-              trailing: Icon(Icons.add),
+              trailing: const Icon(Icons.add),
             ),
             ListTile(
               leading: Icon(
                 Icons.question_answer,
                 color: Colors.grey[850],
               ),
-              title: Text("Q&A"),
+              title: const Text("Q&A"),
               onTap: () {
+                // ignore: avoid_print
                 print("Q&A is clicked");
               },
-              trailing: Icon(Icons.add),
+              trailing: const Icon(Icons.add),
             )
           ],
         ),

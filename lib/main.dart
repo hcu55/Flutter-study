@@ -1,6 +1,9 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:myapp/screens/app_bar.dart';
 import 'package:myapp/screens/snack_bar.dart';
+import 'package:myapp/screens/snack_bar_nobuilder.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'BBANTO',
-      home: MyAppSnackBar(),
+      home: MyAppNoBuilderSnackBar(),
     );
   }
 }
