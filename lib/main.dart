@@ -7,6 +7,9 @@ import 'package:myapp/screens/snack_bar_nobuilder.dart';
 import 'package:myapp/screens/toast_message.dart';
 import 'package:myapp/screens/column_row_widget.dart';
 import 'package:myapp/screens/navigator.dart';
+import 'package:myapp/screens/screena.dart';
+import 'package:myapp/screens/screenb.dart';
+import 'package:myapp/screens/screenc.dart';
 
 void main() => runApp(const MyApp());
 
@@ -15,10 +18,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'BBANTO',
-      home: MyNavigator(),
+      title: 'MyApp',
+      initialRoute: '/',
+      routes: {
+        '/' : (context) => const ScreenA(),
+        '/b' : (context) => const ScreenB(),
+        '/c' : (context) => const ScreenC()
+
+      },
     );
   }
 }
