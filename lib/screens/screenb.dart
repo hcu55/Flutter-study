@@ -36,6 +36,7 @@ class _ScreenBState extends State<ScreenB> {
               primary: Colors.redAccent,
             onPrimary: Colors.black
           ),
+
           child: const Text('Go to Screen A'),
           onPressed: () {
             Navigator.pop(context);
